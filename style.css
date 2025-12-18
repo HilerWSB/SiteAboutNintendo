@@ -1,0 +1,45 @@
+:root {
+    --nintendo-red: #e60012;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.section-title {
+    font-weight: 800;
+    color: var(--nintendo-red);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--nintendo-red) 0%, #a0000d 100%);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card {
+    transition: transform 0.3s ease, shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #555 !important;
+}
+
+.nav-link:hover {
+    color: var(--nintendo-red) !important;
+}
+
+.nav-link.active {
+    color: var(--nintendo-red) !important;
+    border-bottom: 2px solid var(--nintendo-red);
+}

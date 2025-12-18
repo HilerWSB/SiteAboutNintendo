@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo - Historia i Innowacje | Projekt: Karol Sankowski</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #e60012 0%, #ff4d4d 100%);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: #e60012;
+            bottom: 0;
+            left: 25%;
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-main">
+
+    <nav id="navbar-main" class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-danger" href="#">
+                <i class="bi bi-controller me-2"></i>NINTENDO HISTORY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#konsole">Kultowe Konsole</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gry">Legendarny Świat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#api-zone">Strefa API</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero text-white text-center py-5">
+        <div class="container py-4">
+            <h1 class="display-3 fw-bold">Magia Nintendo</h1>
+            <p class="lead mb-4">Od kart do gry po rewolucję wirtualnej rozrywki. Poznaj historię innowacji.</p>
+            <div class="badge bg-white text-danger p-2 px-4 rounded-pill">Autor: Karol Sankowski</div>
+            <div class="mt-4">
+                <img src="img/nintendo-logo.webp" class="img-fluid rounded shadow" alt="Nintendo Collage" style="max-width:700px; min-height: 300px; background-color: rgba(255,255,255,0.2);">
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+
+        <section id="historia" class="mb-5 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="section-title mb-3">Więcej niż firma</h2>
+                    <p class="lead">Nintendo zaczynało w 1889 roku jako mały warsztat produkujący karty do gry Hanafuda w Kioto.</p>
+                    <p class="text-muted">Przez ponad 130 lat firma przeszła niezwykłą metamorfozę. Od zabawek mechanicznych, przez "Love Hotels", aż po stanie się gigantem gier wideo, który uratował branżę po krachu w 1983 roku.</p>
+                    <p>Dziś Nintendo to synonim kreatywności. Zamiast ścigać się na graficzną moc obliczeniową (jak konkurencja), stawiają na <strong>"lateral thinking with withered technology"</strong> – tworzenie nowych sposobów zabawy przy użyciu sprawdzonej technologii.</p>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0 text-center">
+                    <img src="img/siedziba.jpg" class="img-fluid rounded shadow" alt="Siedziba Nintendo dawniej i dziś" style="min-height: 300px; background-color: #eee;">
+                </div>
+            </div>
+        </section>
+
+        <section id="konsole" class="mb-5 pt-4">
+            <h2 class="section-title text-center mb-5 w-100">Kultowe Konsole</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="card shadow h-100 flex-row">
+                        <div class="w-50">
+                            <img src="img/Nintendo_Gameboy.jpg" class="img-fluid h-100 object-fit-cover rounded-start" alt="Game Boy" style="background-color: #eee; min-height: 200px;">
+                        </div>
+                        <div class="card-body w-50 d-flex flex-column justify-content-center">
+                            <h5 class="card-title fw-bold">Game Boy (1989)</h5>
+                            <p class="card-text small">Ikona lat 90. Dzięki Tetrisowi i Pokémonom udowodniła, że gry można zabrać wszędzie.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow h-100 flex-row">
+                        <div class="w-50">
+                            <img src="img/Wikipedia_SNES_PAL.jpg" class="img-fluid h-100 object-fit-cover rounded-start" alt="SNES" style="background-color: #eee; min-height: 200px;">
+                        </div>
+                        <div class="card-body w-50 d-flex flex-column justify-content-center">
+                            <h5 class="card-title fw-bold">SNES (1990)</h5>
+                            <p class="card-text small">Złota era 16-bitów. To tu narodziły się legendy takie jak Super Metroid czy Chrono Trigger.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow h-100 flex-row">
+                        <div class="w-50">
+                            <img src="img/Wii_console.png" class="img-fluid h-100 object-fit-cover rounded-start" alt="Nintendo Wii" style="background-color: #eee; min-height: 200px;">
+                        </div>
+                        <div class="card-body w-50 d-flex flex-column justify-content-center">
+                            <h5 class="card-title fw-bold">Nintendo Wii (2006)</h5>
+                            <p class="card-text small">Rewolucja ruchowa. Pilot Wii Remote sprawił, że w tenisa i kręgle grały całe rodziny, w tym dziadkowie.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow h-100 flex-row border-danger">
+                        <div class="w-50 position-relative">
+                             <span class="position-absolute top-0 start-0 badge bg-danger m-2">Bestseller</span>
+                            <img src="img/nintendo-switch.jpg" class="img-fluid h-100 object-fit-cover rounded-start" alt="Nintendo Switch" style="background-color: #eee; min-height: 200px;">
+                        </div>
+                        <div class="card-body w-50 d-flex flex-column justify-content-center">
+                            <h5 class="card-title fw-bold text-danger">Nintendo Switch (2017)</h5>
+                            <p class="card-text small">Genialna hybryda. Grasz na telewizorze, wyjmujesz konsolę ze stacji dokującej i grasz dalej w autobusie.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="gry" class="mb-5 pt-4">
+            <h2 class="section-title text-center mb-5 w-100">Światy, które znamy</h2>
+            <div class="row g-4 text-center">
+                
+                <div class="col-md-4">
+                    <div class="p-3 border rounded shadow-sm h-100 bg-light">
+                        <img src="img/SuperMarioHub.jpg" class="img-fluid rounded-3 mb-3 shadow" alt="Super Mario" style="width: 100%; height: 200px; object-fit: cover; background-color: #ddd;;">
+                        <h4 class="fw-bold text-danger">Super Mario</h4>
+                        <p class="small text-muted">Włoski hydraulik, który skacząc po platformach, stał się najbardziej rozpoznawalną postacią w historii gier.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-3 border rounded shadow-sm h-100 bg-light">
+                        <img src="img/zelda.webp" class="img-fluid rounded-3 mb-3 shadow" alt="Link Zelda" style="width: 100%; height: 200px; object-fit: cover; background-color: #ddd;;">
+                        <h4 class="fw-bold text-success">The Legend of Zelda</h4>
+                        <p class="small text-muted">Epicka opowieść o odwadze. Link, Zelda i Ganon to trio, które definiuje gatunek przygodowych gier akcji.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-3 border rounded shadow-sm h-100 bg-light">
+                        <img src="img/pokemon.jpg" class="img-fluid rounded-3 mb-3 shadow" alt="Pikachu" style="width: 100%; height: 200px; object-fit: cover; background-color: #ddd;;">
+                        <h4 class="fw-bold text-warning">Pokémon</h4>
+                        <p class="small text-muted">"Złap je wszystkie!" Fenomen kulturowy łączący kolekcjonerstwo, rywalizację i przyjaźń.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="api-zone" class="mb-5 py-5 bg-dark text-white rounded shadow">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-4"><i class="bi bi-code-slash me-2"></i>Strefa Fana: PokéAPI</h2>
+                <p class="mb-4">Przykład wykorzystania dynamicznego źródła danych (API REST). Kliknij przycisk, aby "złapać" losowego Pokémona prosto z bazy danych.</p>
+                
+                <div class="card mx-auto text-dark" style="max-width: 300px;">
+                    <div class="card-body text-center">
+                        <div id="poke-img-container" class="mb-3" style="min-height: 100px;">
+                            <div class="spinner-border text-danger d-none" role="status" id="loader">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <img id="poke-img" src="" alt="Tu pojawi się Pokemon" class="img-fluid d-none" width="120">
+                            <i id="poke-placeholder" class="bi bi-question-circle display-1 text-muted"></i>
+                        </div>
+                        <h4 id="poke-name" class="fw-bold text-capitalize">???</h4>
+                        <button onclick="fetchPokemon()" class="btn btn-danger w-100 mt-2 rounded-pill fw-bold">
+                            <i class="bi bi-disc me-1"></i> Losuj Pokémona
+                        </button>
+                    </div>
+                </div>
+                <p class="small text-white-50 mt-3">Dane pobierane w czasie rzeczywistym z pokeapi.co</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-light text-center py-4 border-top">
+        <div class="container">
+            <p class="mb-1 fw-bold">Projekt studencki | Analiza Systemów Informatycznych</p>
+            <p class="small text-muted">&copy; 2025 Karol Sankowski. Strona edukacyjna.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        async function fetchPokemon() {
+            const loader = document.getElementById('loader');
+            const img = document.getElementById('poke-img');
+            const placeholder = document.getElementById('poke-placeholder');
+            const nameLabel = document.getElementById('poke-name');
+            
+            img.classList.add('d-none');
+            placeholder.classList.add('d-none');
+            loader.classList.remove('d-none');
+            nameLabel.innerText = "Łapanie...";
+
+            const randomId = Math.floor(Math.random() * 151) + 1;
+
+            try {
+                const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`);
+                if (!response.ok) throw new Error('Błąd sieci');
+                const data = await response.json();
+
+                img.src = data.sprites.front_default;
+                nameLabel.innerText = data.name;
+                
+                img.onload = () => {
+                    loader.classList.add('d-none');
+                    img.classList.remove('d-none');
+                };
+            } catch (error) {
+                console.error("Błąd:", error);
+                nameLabel.innerText = "Uciekł! Spróbuj ponownie.";
+                loader.classList.add('d-none');
+                placeholder.classList.remove('d-none');
+            }
+        }
+    </script>
+</body>
+</html>
